@@ -1,4 +1,5 @@
-# Swift OCR: LLM Powered Fast OCR ⚡
+# OCR: LLM Powered Fast OCR ⚡
+Modified Version of this repo https://github.com/yigitkonur/swift-ocr-llm-powered-pdf-to-markdown
 
 ## 🌟 Features
 
@@ -11,43 +12,6 @@
 - **Structured Output**: Extracted text is formatted using Markdown for readability and consistency.
 - **Robust Error Handling**: Comprehensive logging and exception handling for reliable operations.
 - **Scalable Architecture**: Asynchronous processing enables handling multiple requests efficiently.
-
-## 📹 Demo
-
-https://github.com/user-attachments/assets/6b39f3ea-248e-4c29-ac2e-b57de64d5d65
-
-*Demo video showcasing the conversion of NASA's Apollo 17 flight documents, which include unorganized, horizontally and vertically oriented pages, into well-structured Markdown format without any issues.*
-
-Here's a single, comprehensive section on cost comparison for your README:
-
-## Cost Comparison and Value Proposition
-
-Our solution offers an optimal balance of affordability, accuracy, and advanced features:
-
-### Cost Breakdown
-- Average token usage per image: ~1200
-- Total tokens per page (including prompt): ~1500
-- [GPT4O] Input token cost: $5 per million tokens
-- [GPT4O] Output token cost: $15 per million tokens
-
-For 1000 documents:
-- Estimated total cost: $15
-
-#### Cost Optimization Options
-1. Utilizing GPT4 mini: Reduces cost to ~$8 per 1000 documents
-2. Implementing batch API: Further reduces cost to ~$4 per 1000 documents
-
-#### Market Comparison
-This solution is significantly more affordable than alternatives:
-- Our cost: $15 per 1000 documents
-- CloudConvert: ~$30 per 1000 documents (PDFTron mode, 4 credits required)
-
-While cost-effectiveness is a major advantage, our solution also provides:
-- Superior accuracy and consistency
-- Precise table generation
-- Output in easily editable markdown format
-
-This combination of affordability and advanced features makes solution stand out in the document processing market. It's not just about being cheaper; it's about providing excellent value through reliability, flexibility, and high-quality output.
 
 ## 🛠️ Installation
 
@@ -62,8 +26,8 @@ This combination of affordability and advanced features makes solution stand out
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yigitkonur/llm-openai-ocr.git
-   cd llm-openai-ocr
+   git clone https://github.com/PyPiSan/ocr-llm-powered-pdf-to-markdown.git
+   cd ocr-llm-powered-pdf-to-markdown
    ```
 
 2. **Create a Virtual Environment**
@@ -85,8 +49,6 @@ This combination of affordability and advanced features makes solution stand out
 
    ```env
    OPENAI_API_KEY=your_openai_api_key
-   AZURE_OPENAI_ENDPOINT=your_azure_openai_endpoint
-   OPENAI_DEPLOYMENT_ID=your_openai_deployment_id
    OPENAI_API_VERSION=your_openai_api_version  # Default is "gpt-4o"
    BATCH_SIZE=10  # Optional: Default is 1
    MAX_CONCURRENT_OCR_REQUESTS=5  # Optional: Default is 5
@@ -153,8 +115,6 @@ All configurations are managed via environment variables. Ensure you have a `.en
 ### Key Configuration Variables
 
 - **OPENAI_API_KEY**: Your OpenAI API key.
-- **AZURE_OPENAI_ENDPOINT**: The endpoint for Azure OpenAI service.
-- **OPENAI_DEPLOYMENT_ID**: Deployment ID for the OpenAI model.
 - **OPENAI_API_VERSION**: API version for OpenAI (default: "gpt-4o").
 - **BATCH_SIZE**: Number of images to process per OCR request (default: 1).
 - **MAX_CONCURRENT_OCR_REQUESTS**: Maximum number of concurrent OCR requests (default: 5).
